@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Carousel Example</title>
+    <link href="assets/style/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+
+  <body>
+    <main data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./imgs/user1.jpeg" class="card-img-top" alt="user1" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <p>
+                <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./imgs/user2.jpeg" class="card-img-top" alt="user2" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+              </div>
+              <p>
+                <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./imgs/user3.jpeg" class="card-img-top" alt="user3" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer
+                  content than the first to show that equal height action.
+                </p>
+              </div>
+              <p>
+                <a class="btn btn-secondary" href="#">View details &raquo;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="custom-divider" />
+
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="description">
+              <h2>Oh yeah, it is that good. See for yourself.</h2>
+              <p>
+                Another featurette? Of course. More placeholder content here to
+                give you an idea of how this layout would work with some actual
+                real-world content in place.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <img
+              src="./imgs/user1.jpeg"
+              alt="user1"
+              class="img-fluid rounded"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </div>
+      </div>
+      <hr class="custom-divider" />
+
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="./imgs/user2.jpeg"
+              alt="user1"
+              class="img-fluid rounded"
+              width="100%"
+              height="auto"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <div class="description">
+              <h2>Oh yeah, it is that good. See for yourself.</h2>
+              <p>
+                Some great placeholder content for the first featurette here.
+                Imagine some exciting prose here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="custom-divider" />
+
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="description">
+              <h2>And lastly, this one. Checkmate.</h2>
+              <p>
+                And yes, this is the last block of representative placeholder
+                content. Again, not really intended to be actually read, simply
+                here to give you a better view of what this would look like with
+                some actual content. Your content.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./imgs/user3.jpeg"
+              alt="user1"
+              class="img-fluid rounded"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </div>
+      </div>
+      <hr class="custom-divider" />
+      <footer class="container">
+        <p class="float-end">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          &copy;2017–2025 Company, Inc. &middot;<a href="#">Privacy</a>
+          &middot;<a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script src="./assets/script/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
